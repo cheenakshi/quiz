@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QUIZ</title>
+</head>
+<body>
+	<h1>BASIIC GK QUESTIONS</h1>
+	<form name="myform">
+		1.what is the capital of india?
+		<br>
+		<input type="radio" name="q1" value="a">Delhi</br>
+		<input type="radio" name="q1" value="b">Mumbai</br>
+		<input type="radio" name="q1" value="c">Chandigarh</br>
+		<input type="radio" name="q1" value="d">Dehradhun</br>
+		2.How many days do we have in a week?
+		<br>
+		<input type="radio" name="q2" value="a">Nine</br>
+		<input type="radio" name="q2" value="b">Seven</br>
+		<input type="radio" name="q2" value="c">Six</br>
+		<input type="radio" name="q2" value="d">Eight</br>
+		3.What do you call a type of shape that has five sides?
+		<br>
+		<input type="radio" name="q3" value="a">Hexagon</br>
+		<input type="radio" name="q3" value="b">Pentagon</br>
+		<input type="radio" name="q3" value="c">Triangle</br>
+		<input type="radio" name="q3" value="d">Octagon</br>
+		4.what is the largest mammal?
+		<br>
+		<input type="radio" name="q4" value="a">Giraffe</br>
+		<input type="radio" name="q4" value="b">Zebra</br>
+		<input type="radio" name="q4" value="c">Blue whale</br>
+		<input type="radio" name="q4" value="d">Shark</br>
+		5.How many primary colors are there?
+		<br>
+		<input type="radio" name="q5" value="a">two</br>
+		<input type="radio" name="q5" value="b">five</br>
+		<input type="radio" name="q5" value="c">four</br>
+		<input type="radio" name="q5" value="d">three</br>
+		<input type="button" value="submit" onclick="check()">
+	</form>
+	<script >
+		function check()
+		{
+			var q1=document.myform.q1.value;
+			var q2=document.myform.q2.value;
+			var q3=document.myform.q3.value;
+			var q4=document.myform.q4.value;
+			var q5=document.myform.q5.value;
+			var count=0;
+
+			if(q1=="a"){
+				count++;
+			}
+			if(q2=="b"){
+				count++;
+			}
+			if(q3=="b"){
+				count++;
+			}
+			if (q4=="c") { 
+				count++;}
+			if (q5=="d") {
+			 count++;}
+			alert("you got "+count+" marks");
+		}
+	</script>
+</body>
+</html>
